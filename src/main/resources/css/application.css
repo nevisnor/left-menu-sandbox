@@ -1,0 +1,262 @@
+@font-face {
+    src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+    src: url('../fonts/RobotoCondensed-Light.ttf');
+}
+
+@font-face {
+    src: url('../fonts/RobotoCondensed-Bold.ttf');
+}
+
+@font-face {
+    src: url('../fonts/RobotoCondensed-Italic.ttf');
+}
+
+.root {
+    -fx-font-family: "Roboto Condensed";
+    -fx-text-fill: blue;
+}
+
+.jfx-decorator {
+    -fx-decorator-color: black;
+    -fx-font-size: 1.5em;
+}
+
+.jfx-decorator .jfx-decorator-buttons-container {
+    -fx-background-color: -fx-decorator-color;
+}
+
+.jfx-decorator .resize-border {
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 0 4 4 4;
+}
+
+.jfx-hamburger StackPane{
+	-fx-background-color: #000000;
+	-fx-border-color: blue;
+	-fx-stroke-width: 2;
+	-fx-background-radius: 5;
+	-fx-border-radius: 5;
+}
+
+.nav-pane {
+    -fx-background-color: blue;
+    -fx-border-color: blue;
+}
+
+.nav-button {
+    -fx-background-color: transparent;    
+    -fx-text-fill:  white;
+    -fx-font-size: 1.5em;
+    -fx-cursor: hand;
+}
+
+.row-action-button {
+    -fx-cursor: hand;
+}
+
+.action-button {
+	-fx-font-size: 1.2em;
+	-fx-background-color:  #72BD2D;
+	-fx-text-fill: white;
+	-fx-background-radius: 0em;
+}
+
+.content-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+.title-bar {
+    -fx-background-color: grey;
+}
+
+.title-text {
+    -fx-fill: #FFFFFF;
+    -fx-font-size: 24px;
+    
+}
+
+/* ******************************************* */
+/*    Scroll Bars                              */
+/* ******************************************* */
+
+.scroll-bar:vertical > .track-background, .scroll-bar:horizontal > .track-background {
+-fx-background-color: transparent;
+}
+
+.scroll-bar:vertical > .thumb, .scroll-bar:horizontal > .thumb {
+-fx-background-color: #BDBDBD;
+-fx-background-insets: 0.0;
+-fx-background-radius: 1.0;
+}
+
+.scroll-bar > .increment-button, .scroll-bar > .decrement-button {
+-fx-padding: 0;
+}
+
+.scroll-bar > .increment-button, .scroll-bar > .decrement-button,
+.scroll-bar:hover > .increment-button, .scroll-bar:hover > .decrement-button {
+-fx-background-color: transparent;
+}
+
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+-fx-background-color: rgb(150.0, 150.0, 150.0);
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+-fx-background-color: #F5F5F5;
+-fx-border-width: 0;
+}
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+-fx-background-color: transparent;
+-fx-background-radius: 0;
+-fx-padding: 0 0 8 0;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+-fx-background-color: transparent;
+-fx-background-radius: 0em;
+-fx-padding: 0 8 0 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+-fx-shape: "" !important;
+-fx-padding: 0 !important;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+-fx-background-insets: 1;
+}
+
+/* ******************************************* */
+/*    JFX Tree Table View                      */
+/* ******************************************* */
+
+.tree-table-view{
+    -fx-tree-table-color: #72BD2D;
+    -fx-tree-table-rippler-color : rgba(255, 0, 0, 0.9);
+}
+.tree-table-view:focused .tree-table-row-cell:selected {
+    -fx-background-color: -fx-tree-table-color  ;
+    -fx-table-cell-border-color: -fx-tree-table-color;
+}
+
+.tree-table-view:focused .tree-table-row-cell:selected .tree-table-cell{
+    -fx-text-fill: white;
+}
+
+.tree-table-view .jfx-rippler {
+    -fx-rippler-fill: -fx-tree-table-rippler-color;
+}
+
+.tree-table-view .column-header ,
+.tree-table-view .column-header-background,
+.tree-table-view .column-header-background .filler{
+    -fx-background-color:TRANSPARENT;
+}
+
+.tree-table-view .column-header{
+    -fx-border-width : 0 1 0 1;
+    -fx-border-color: #F3F3F3;
+}
+
+.tree-table-view .column-header .label {
+    -fx-text-fill : #949494;
+    -fx-padding : 16 0 16 0 ;
+}
+
+.tree-table-view .column-header .arrow, .tree-table-view .column-header .sort-order-dot{ 
+    -fx-background-color : #949494;
+}
+
+.tree-table-view .column-header:last-visible {
+    -fx-border-width: 0 2 0 1;
+}
+
+.tree-table-view .column-header-background{
+    -fx-border-width : 0 0.0 1 0;
+    -fx-border-color:#F3F3F3;
+}
+
+.tree-table-view .tree-table-cell{
+    -fx-border-width:0 0 0 0;
+    -fx-padding : 16 0 16 0 ;
+}
+
+.tree-table-view .column-overlay{
+    -fx-background-color: -fx-tree-table-color;
+}
+
+.tree-table-view .column-resize-line, .tree-table-view .column-drag-header{
+    -fx-background-color: -fx-tree-table-rippler-color;
+}
+
+.tree-table-view:focused {
+    -fx-background-color: -fx-tree-table-color,-fx-box-border,-fx-control-inner-background;
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1.4, 0, 0;
+    /*....*/
+    -fx-padding: 1; /* 0.083333em; */
+}
+
+.tree-table-row-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-text-fill;
+    -fx-padding: 0.333333em 0.229em 0.333333em 0.229em; /* 4 */
+    -fx-shape: "M 0 -3.5 L 4 0 L 0 3.5 z";
+}
+.tree-table-row-cell .jfx-text-field{
+    -fx-focus-color: #72BD2D;
+}
+
+
+/* ******************************************* */
+/*    JFX Popup                                */
+/* ******************************************* */
+
+.jfx-popup-container
+{
+    -fx-background-color: grey;
+}
+
+.jfx-popup-container .jfx-list-view
+{
+    -fx-background-color: transparent;
+    -fx-pref-width: 120px;
+    -fx-background-insets: 25 0 25 0;
+}
+.jfx-popup-container .jfx-list-view .jfx-list-cell
+{
+    -fx-background-color: #EEEEEE;
+}
+
+.jfx-popup-container .jfx-list-view .jfx-list-cell:selected
+{
+    -fx-background-color: grey;
+}
+
+/* ******************************************* */
+/*    JFX Snackbar                             */
+/* ******************************************* */
+
+.jfx-snackbar-content {
+	-fx-background-color: blue;
+}
+	
+.jfx-snackbar-toast{
+	-fx-text-fill: #FFFFFF;
+}
+
+.jfx-snackbar-action {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold; 
+}
+

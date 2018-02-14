@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSnackbar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rsiven.leftmenu.controllers.MainController">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+         <center>
+            <StackPane BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="53.0" styleClass="title-bar" StackPane.alignment="TOP_CENTER" />
+                  <StackPane fx:id="contentPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+                     <children>
+                        <JFXSnackbar fx:id="snkMessage" />
+                     </children></StackPane>
+               </children>
+            </StackPane>
+         </center>
+         <left>
+            <StackPane fx:id="navigationPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="45.0" styleClass="nav-pane" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <StackPane fx:id="statusPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <StackPane fx:id="toolPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

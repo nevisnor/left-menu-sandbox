@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane prefHeight="150.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane>
+         <center>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Systems Pane" />
+         </center>
+         <top>
+            <StackPane alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" minHeight="53.0" minWidth="-Infinity" styleClass="title-bar" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="Systems" />
+               </children>
+               <padding>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </padding>
+            </StackPane>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

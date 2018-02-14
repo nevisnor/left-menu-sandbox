@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableColumn?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<StackPane alignment="TOP_LEFT" styleClass="content-pane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rsiven.leftmenu.controllers.UsersController">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+         <top>
+            <StackPane alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" styleClass="title-bar" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text" text="Users" />
+               </children>
+               <padding>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </padding>
+            </StackPane>
+         </top>
+         <center>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <HBox alignment="CENTER_LEFT" VBox.vgrow="NEVER">
+                     <children>
+                        <Pane HBox.hgrow="ALWAYS" />
+                        <JFXButton fx:id="btnAdd" styleClass="action-button" text="Add" HBox.hgrow="NEVER" />
+                     </children>
+                  </HBox>
+                  <JFXTreeTableView fx:id="ttv" minWidth="-Infinity" prefWidth="624.0" showRoot="false" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <JFXTreeTableColumn fx:id="username" maxWidth="-Infinity" minWidth="160.0" prefWidth="-1.0" resizable="false" text="Username" />
+                        <JFXTreeTableColumn fx:id="system" maxWidth="-Infinity" minWidth="160.0" prefWidth="-1.0" resizable="false" text="System" />
+                        <JFXTreeTableColumn fx:id="fillercol" editable="false" maxWidth="1.7976931348623157E308" minWidth="24.0" prefWidth="300.0" sortable="false" />
+                        <JFXTreeTableColumn fx:id="buttoncol" editable="false" maxWidth="32.0" minWidth="32.0" prefWidth="32.0" resizable="false" sortable="false" />
+                     </columns>
+                  </JFXTreeTableView>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
